@@ -1,4 +1,11 @@
-#公用配置文件（不区分环境）
 spring:
   application:
-    name: yurentang-user-server
+    name: common-config
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: yurentang-config-server
+      profile: dev
+server:
+  port: 8762

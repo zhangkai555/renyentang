@@ -1,6 +1,6 @@
 package com.yurentang.buy.controller;
 
-import com.yurentang.buy.feign.UserServiceFeign;
+import com.yurentang.buy.feign.service.UserServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ public class BuyController {
     @Autowired
     private UserServiceFeign userService;
 
-    @RequestMapping("buy")
+    @RequestMapping(value = "buy",produces = "application/json;charset=utf-8")
     String buy(){
         return userService.user();
     }

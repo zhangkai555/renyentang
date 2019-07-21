@@ -2,3 +2,12 @@
 spring:
   application:
     name: yurentang-buy-server
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+#开启熔断器
+feign:
+  hystrix:
+    enabled: true

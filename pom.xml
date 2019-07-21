@@ -19,10 +19,9 @@
         <module>yurentang-xcx-core</module>
         <module>yurentang-eureka-server</module>
         <module>yurentang-gateway-server</module>
-        <module>aaaaaaa</module>
-        <module>cccc</module>
-        <module>yurentang-xcx-order</module>
         <module>yurentang-xcx-buy</module>
+        <module>yurentang-config-server</module>
+        <module>ssss</module>
     </modules>
 
     <developers>

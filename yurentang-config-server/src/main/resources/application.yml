@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: yurentang-config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangkai555/renyentang-config #配置git仓库地址
+          searchPaths: config #配置仓库路径
+      label: master #配置仓库的分支
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
